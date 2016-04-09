@@ -1,0 +1,9 @@
+In command mode:
+
+enter visual mode (v/V)
+select lines (j/k/movement)
+split into lines (Cmd/Ctrl+Shift+L)
+exit visual mode (v)
+you should now be in command mode with multiple cursors :)
+enter input mode (i/a/etc..)
+edit with multiple cursors

@@ -6,6 +6,8 @@ sampleInventory = {
                     'torch': 6
                   }
 
+dragonLoot = ['gold coin', 'dagger', 'gold coin', 'ruby']
+
 
 def displayInventory(inventory):
   print('Inventory:')
@@ -14,5 +16,16 @@ def displayInventory(inventory):
     print(str(v) + ' ' + k)
     totalItems += v
   print('Total number of items: ' + str(totalItems))
+
+def addToInventory(inventory, addedItems):
+  for item in addedItems:
+    inventory.setdefault(item,0)
+    inventory[item] += 1
+  return inventory
+
+
+displayInventory(sampleInventory)
+
+addToInventory(sampleInventory, dragonLoot)
 
 displayInventory(sampleInventory)
